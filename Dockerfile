@@ -4,6 +4,9 @@ FROM openjdk:17
 WORKDIR /app
 # Copy the compiled Java application JAR file into the container
 COPY ./target/Testing1-0.0.1-SNAPSHOT.jar /app
+
+COPY src/main/webapp /app/webapp
+
 # Expose the port the Spring Boot application will run on
 EXPOSE 4041
 # Command to run the application
