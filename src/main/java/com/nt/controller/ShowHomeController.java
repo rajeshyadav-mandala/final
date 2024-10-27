@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class ShowHomeController {
 	
 	
@@ -23,7 +23,7 @@ public class ShowHomeController {
 		return new  ResponseEntity<String>("Good Morning", HttpStatus.OK);
 	}
 	
-	@RequestMapping("/home")
+	@GetMapping("/test")
 	public  String  showHomePage() {
 		//return LVN
 		return "welcome";
