@@ -22,5 +22,11 @@ public class ShowHomeController {
 		System.out.println("WishMessageOperationsController.showWishMessage()");
 		return new  ResponseEntity<String>("Good Morning", HttpStatus.OK);
 	}
+	
+	@RequestMapping("/home")
+	public  String  showHomePage() {
+		//return LVN
+		return "welcome";
+	}
 
 }
